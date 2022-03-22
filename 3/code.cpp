@@ -1,6 +1,6 @@
 /* PROJECT EULER - PROBLEM 3
  *  Author: Leobardo Argüelles
- *  Last edit: 18/03/2022
+ *  Last edit: 21/03/2022
  */
 
 // Libraries
