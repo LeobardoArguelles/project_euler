@@ -1,6 +1,6 @@
-/* PROJECT EULER - PROBLEM 3
+/* PROJECT EULER - PROBLEM 7
  *  Author: Leobardo Argüelles
- *  Last edit: 18/03/2022
+ *  Last edit: 22/03/2022
  */
 
 // Libraries
@@ -13,8 +13,7 @@
 using namespace std;
 
 #define N 600851475143
-// #define MAX 100000
-#define MAX 2000000000
+#define MAX 1000000
 
 vector<unsigned long long int> sieve(vector<unsigned long long int> numbers);
 
@@ -35,8 +34,8 @@ int main() {
 
     primes = sieve(primes);
 
-    for(auto x : primes)
-        cout << x << endl;
+    // for(auto x : primes)
+    //     cout << x << endl;
 
     return 0;
 }
@@ -58,8 +57,14 @@ vector<unsigned long long int> sieve(vector<unsigned long long int> numbers) {
                 size--;
             }
         }
+        if(idx == 10001) {
+            cout << "10 001 prime: " << num << endl;
+            return numbers;
+        }
         num = numbers[idx++];
     }
-
+    cout << "Last index: " << idx << endl;
+    cout << "Size of primes: " << numbers.size() << endl;
+    cout << "10 001 prime: " << numbers[10000] << endl;
     return numbers;
 }
