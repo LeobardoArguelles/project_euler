@@ -14,7 +14,7 @@ using namespace std;
 
 #define N 600851475143
 // #define MAX 100000
-#define MAX 2000000000
+#define MAX 2000000
 
 vector<unsigned long long int> sieve(vector<unsigned long long int> numbers);
 
